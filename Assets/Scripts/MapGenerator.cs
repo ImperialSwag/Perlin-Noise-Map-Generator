@@ -25,6 +25,11 @@ public class MapGenerator : MonoBehaviour
 	public TerrainType[] regions;
 	TerrainType[] tempRegions;
 
+	public int generateAmount = 15;
+	public int startIndex = 0;
+	public ColorTag colorTag;
+	public bool isSeaTexture = false;
+
 	public void GenerateMap()
 	{
 		float[,] noiseMap = Noise.GenerateNoiseMap(mapWidth, mapHeight, seed, noiseScale, octaves, persistance, lacunarity, offset);
@@ -69,12 +74,54 @@ public class MapGenerator : MonoBehaviour
 		{
 			System.IO.Directory.CreateDirectory(dirPath);
 		}
-		System.IO.File.WriteAllBytes(dirPath + "/R_" + Random.Range(0, 100000) + ".png", bytes);
+        switch (colorTag)
+        {
+			case ColorTag.Red:
+				dirPath += "/Red_";
+				break;
+			case ColorTag.Blue:
+				dirPath += "/Blue_";
+				break;
+			case ColorTag.Green:
+				dirPath += "/Green_";
+				break;
+			case ColorTag.Purple:
+				dirPath += "/Purple_";
+				break;
+			case ColorTag.Gray:
+				dirPath += "/Gray_";
+				break;
+			case ColorTag.Sun:
+				dirPath += "/Sun_";
+				break;
+        }
+		if (isSeaTexture)
+		{
+			System.IO.File.WriteAllBytes(dirPath + seed + "_A.png", bytes);
+		} else
+		{
+			System.IO.File.WriteAllBytes(dirPath + seed + ".png", bytes);
+		}
 		Debug.Log(bytes.Length / 1024 + "Kb was saved as: " + dirPath);
 #if UNITY_EDITOR
 		UnityEditor.AssetDatabase.Refresh();
 #endif
 	}
+
+	public void SaveMultipleTexture(int startIndex)
+    {
+		for(int i = startIndex; i < startIndex+generateAmount; i++)
+        {
+			seed = i;
+			GenerateMap();
+			SaveTexture();
+        }
+    }
+
+	public void SaveMultipleTexture()
+    {
+		SaveMultipleTexture(startIndex);
+    }
 
 	void OnValidate()
 	{
@@ -150,4 +197,9 @@ public struct TerrainType
 	public string name;
 	public float height;
 	public Color color;
+}
+
+public enum ColorTag
+{
+	Red, Green, Blue, Purple, Gray, Sun
 }

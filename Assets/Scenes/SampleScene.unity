@@ -300,7 +300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1344781855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +458,7 @@ Transform:
   m_GameObject: {fileID: 1429371342}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 200, y: 1, z: 100}
+  m_LocalScale: {x: 1000, y: 1, z: 1000}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -661,264 +661,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawMode: 1
-  mapWidth: 200
-  mapHeight: 100
-  noiseScale: 54.7
+  mapWidth: 1000
+  mapHeight: 1000
+  noiseScale: 150
   octaves: 4
-  persistance: 0.12
+  persistance: 0.08
   lacunarity: 5
-  seed: 64
+  seed: 14
   offset: {x: -1.41, y: 0}
   autoUpdate: 1
-  colorDepth: 20
+  colorDepth: 3
   regions:
-  - name: Darkest
-    height: 0.06
-    color: {r: 0.6132076, g: 0.3872026, b: 0.18801177, a: 1}
-  - name: Dark
-    height: 0.23
-    color: {r: 0.6509804, g: 0.41960788, b: 0.21568629, a: 1}
-  - name: Medium
-    height: 1.49
-    color: {r: 0.85098046, g: 0.67058825, b: 0.45098042, a: 1}
-  - name: Light
-    height: 2.35
-    color: {r: 0.9490197, g: 0.854902, b: 0.6745098, a: 1}
-  tempRegions:
-  - name: Darkest_d_0
-    height: 0.06
-    color: {r: 0.6132076, g: 0.3872026, b: 0.18801177, a: 1}
-  - name: Darkest_d_1
-    height: 0.0685
-    color: {r: 0.6150962, g: 0.38882285, b: 0.18939549, a: 1}
-  - name: Darkest_d_2
-    height: 0.077
-    color: {r: 0.61698484, g: 0.39044312, b: 0.19077922, a: 1}
-  - name: Darkest_d_3
-    height: 0.0855
-    color: {r: 0.6188735, g: 0.39206338, b: 0.19216295, a: 1}
-  - name: Darkest_d_4
-    height: 0.094
-    color: {r: 0.62076217, g: 0.39368364, b: 0.19354667, a: 1}
-  - name: Darkest_d_5
-    height: 0.1025
-    color: {r: 0.6226508, g: 0.3953039, b: 0.1949304, a: 1}
-  - name: Darkest_d_6
-    height: 0.111
-    color: {r: 0.62453943, g: 0.39692417, b: 0.19631413, a: 1}
-  - name: Darkest_d_7
-    height: 0.1195
-    color: {r: 0.62642807, g: 0.39854443, b: 0.19769785, a: 1}
-  - name: Darkest_d_8
-    height: 0.128
-    color: {r: 0.6283167, g: 0.4001647, b: 0.19908157, a: 1}
-  - name: Darkest_d_9
-    height: 0.1365
-    color: {r: 0.63020533, g: 0.40178496, b: 0.2004653, a: 1}
-  - name: Darkest_d_10
-    height: 0.145
-    color: {r: 0.632094, g: 0.40340525, b: 0.20184903, a: 1}
-  - name: Darkest_d_11
-    height: 0.1535
-    color: {r: 0.63398266, g: 0.4050255, b: 0.20323275, a: 1}
-  - name: Darkest_d_12
-    height: 0.162
-    color: {r: 0.6358713, g: 0.40664577, b: 0.20461649, a: 1}
-  - name: Darkest_d_13
-    height: 0.1705
-    color: {r: 0.6377599, g: 0.40826604, b: 0.20600021, a: 1}
-  - name: Darkest_d_14
-    height: 0.179
-    color: {r: 0.63964856, g: 0.4098863, b: 0.20738393, a: 1}
-  - name: Darkest_d_15
-    height: 0.1875
-    color: {r: 0.6415372, g: 0.41150656, b: 0.20876765, a: 1}
-  - name: Darkest_d_16
-    height: 0.19600001
-    color: {r: 0.6434258, g: 0.41312683, b: 0.21015139, a: 1}
-  - name: Darkest_d_17
-    height: 0.2045
-    color: {r: 0.6453145, g: 0.4147471, b: 0.21153511, a: 1}
-  - name: Darkest_d_18
-    height: 0.213
-    color: {r: 0.64720315, g: 0.41636735, b: 0.21291883, a: 1}
-  - name: Darkest_d_19
-    height: 0.22150001
-    color: {r: 0.6490918, g: 0.4179876, b: 0.21430257, a: 1}
-  - name: Dark_d_0
-    height: 0.23
-    color: {r: 0.6509804, g: 0.41960788, b: 0.21568629, a: 1}
-  - name: Dark_d_1
-    height: 0.293
-    color: {r: 0.6609804, g: 0.4321569, b: 0.227451, a: 1}
-  - name: Dark_d_2
-    height: 0.356
-    color: {r: 0.6709804, g: 0.4447059, b: 0.2392157, a: 1}
-  - name: Dark_d_3
-    height: 0.419
-    color: {r: 0.68098044, g: 0.45725495, b: 0.2509804, a: 1}
-  - name: Dark_d_4
-    height: 0.48200002
-    color: {r: 0.69098043, g: 0.46980396, b: 0.2627451, a: 1}
-  - name: Dark_d_5
-    height: 0.545
-    color: {r: 0.7009804, g: 0.48235297, b: 0.27450982, a: 1}
-  - name: Dark_d_6
-    height: 0.60800004
-    color: {r: 0.7109804, g: 0.49490198, b: 0.28627452, a: 1}
-  - name: Dark_d_7
-    height: 0.671
-    color: {r: 0.7209804, g: 0.507451, b: 0.29803923, a: 1}
-  - name: Dark_d_8
-    height: 0.734
-    color: {r: 0.73098046, g: 0.52000004, b: 0.30980393, a: 1}
-  - name: Dark_d_9
-    height: 0.797
-    color: {r: 0.74098045, g: 0.532549, b: 0.32156864, a: 1}
-  - name: Dark_d_10
-    height: 0.86
-    color: {r: 0.75098044, g: 0.54509807, b: 0.33333337, a: 1}
-  - name: Dark_d_11
-    height: 0.92300004
-    color: {r: 0.7609804, g: 0.5576471, b: 0.34509808, a: 1}
-  - name: Dark_d_12
-    height: 0.98600006
-    color: {r: 0.7709804, g: 0.5701961, b: 0.35686278, a: 1}
-  - name: Dark_d_13
-    height: 1.049
-    color: {r: 0.78098047, g: 0.58274513, b: 0.36862746, a: 1}
-  - name: Dark_d_14
-    height: 1.112
-    color: {r: 0.79098046, g: 0.5952941, b: 0.3803922, a: 1}
-  - name: Dark_d_15
-    height: 1.175
-    color: {r: 0.80098045, g: 0.60784316, b: 0.3921569, a: 1}
-  - name: Dark_d_16
-    height: 1.238
-    color: {r: 0.81098044, g: 0.6203922, b: 0.4039216, a: 1}
-  - name: Dark_d_17
-    height: 1.301
-    color: {r: 0.8209804, g: 0.6329412, b: 0.4156863, a: 1}
-  - name: Dark_d_18
-    height: 1.364
-    color: {r: 0.8309805, g: 0.6454902, b: 0.427451, a: 1}
-  - name: Dark_d_19
-    height: 1.427
-    color: {r: 0.84098047, g: 0.6580392, b: 0.43921572, a: 1}
-  - name: Medium_d_0
-    height: 1.49
-    color: {r: 0.85098046, g: 0.67058825, b: 0.45098042, a: 1}
-  - name: Medium_d_1
-    height: 1.533
-    color: {r: 0.8558824, g: 0.67980397, b: 0.4621569, a: 1}
-  - name: Medium_d_2
-    height: 1.576
-    color: {r: 0.8607844, g: 0.6890196, b: 0.47333336, a: 1}
-  - name: Medium_d_3
-    height: 1.619
-    color: {r: 0.86568636, g: 0.69823533, b: 0.48450983, a: 1}
-  - name: Medium_d_4
-    height: 1.662
-    color: {r: 0.8705883, g: 0.707451, b: 0.4956863, a: 1}
-  - name: Medium_d_5
-    height: 1.7049999
-    color: {r: 0.87549025, g: 0.7166667, b: 0.50686276, a: 1}
-  - name: Medium_d_6
-    height: 1.748
-    color: {r: 0.88039225, g: 0.7258824, b: 0.5180392, a: 1}
-  - name: Medium_d_7
-    height: 1.791
-    color: {r: 0.8852942, g: 0.73509806, b: 0.5292157, a: 1}
-  - name: Medium_d_8
-    height: 1.834
-    color: {r: 0.89019614, g: 0.7443138, b: 0.54039216, a: 1}
-  - name: Medium_d_9
-    height: 1.877
-    color: {r: 0.8950981, g: 0.7535294, b: 0.5515686, a: 1}
-  - name: Medium_d_10
-    height: 1.92
-    color: {r: 0.9000001, g: 0.76274514, b: 0.5627451, a: 1}
-  - name: Medium_d_11
-    height: 1.9629999
-    color: {r: 0.90490204, g: 0.77196085, b: 0.5739216, a: 1}
-  - name: Medium_d_12
-    height: 2.006
-    color: {r: 0.909804, g: 0.7811765, b: 0.5850981, a: 1}
-  - name: Medium_d_13
-    height: 2.049
-    color: {r: 0.91470593, g: 0.7903922, b: 0.59627455, a: 1}
-  - name: Medium_d_14
-    height: 2.092
-    color: {r: 0.9196079, g: 0.7996079, b: 0.607451, a: 1}
-  - name: Medium_d_15
-    height: 2.135
-    color: {r: 0.9245099, g: 0.8088236, b: 0.6186275, a: 1}
-  - name: Medium_d_16
-    height: 2.178
-    color: {r: 0.9294118, g: 0.8180393, b: 0.62980396, a: 1}
-  - name: Medium_d_17
-    height: 2.221
-    color: {r: 0.9343138, g: 0.82725495, b: 0.6409804, a: 1}
-  - name: Medium_d_18
-    height: 2.264
-    color: {r: 0.9392157, g: 0.83647066, b: 0.6521569, a: 1}
-  - name: Medium_d_19
-    height: 2.307
-    color: {r: 0.9441177, g: 0.8456863, b: 0.66333336, a: 1}
-  - name: Light
-    height: 2.35
-    color: {r: 0.9490197, g: 0.854902, b: 0.6745098, a: 1}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-  - name: 
-    height: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: deep sea
+    height: 0.1
+    color: {r: 0.25926587, g: 0.12941177, b: 0.30980393, a: 1}
+  - name: sea
+    height: 0.2
+    color: {r: 0.34479246, g: 0.18431371, b: 0.41568628, a: 1}
+  - name: shallow sea
+    height: 0.3
+    color: {r: 0.47911835, g: 0.24313726, b: 0.5568628, a: 1}
+  - name: sand shore
+    height: 0.4
+    color: {r: 0.5548965, g: 0.30980393, b: 0.65882355, a: 1}
+  - name: light grass
+    height: 0.5
+    color: {r: 0.20784315, g: 0.20784315, b: 0.20784315, a: 0}
+  - name: grass
+    height: 0.6
+    color: {r: 0.20784315, g: 0.20784315, b: 0.20784315, a: 0}
+  - name: light forest
+    height: 0.7
+    color: {r: 0.20784315, g: 0.20784315, b: 0.20784315, a: 0}
+  - name: forest
+    height: 0.8
+    color: {r: 0.20784315, g: 0.20784315, b: 0.20784315, a: 0}
+  - name: mountain start
+    height: 0.9
+    color: {r: 0.20784315, g: 0.20784315, b: 0.20784315, a: 0}
+  - name: mountain
+    height: 1
+    color: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0}
+  generateAmount: 15
+  startIndex: 0
+  colorTag: 3

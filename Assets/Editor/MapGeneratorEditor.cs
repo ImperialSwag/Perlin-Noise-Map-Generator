@@ -21,5 +21,10 @@ public class MapGeneratorEditor : Editor
         {
             mapGen.SaveTexture();
         }
+
+        if (GUILayout.Button("Generate and save multiple textures"))
+        {
+            mapGen.SaveMultipleTexture();
+        }
     }
 }
